@@ -1,37 +1,72 @@
-FEATURES -
-AI Website Generation – Create full websites from a simple text description
-• Multi-Page Website Support – Automatically generates pages like index, about, and contact
-• Theme Engine – Supports multiple design themes such as dark, luxury, and minimal
-• Responsive Design – Generated websites are mobile-friendly and responsive
-• Modern UI Components – Includes navigation bar, hero section, and footer
-• Automatic File Structuring – Organizes generated files into proper project folders
-• ZIP Export – Export the generated website as a downloadable ZIP package
-• Preview Mode – Instantly open and preview the generated website in a browser
-• Command Line Interface – Simple CLI commands to generate websites quickly
-• Production-Ready Code – Clean HTML5 and CSS structure
-Tech Stack - 
-Programming Language
+# 🚀 AI Website Generator
 
-• Python
+An AI-powered website generation platform that transforms natural language prompts into responsive, production-ready multi-page websites using Large Language Models.
 
-AI / LLM
+---
 
-• Groq API
-• Llama 3.1 Model
+## ✨ Features
 
-Backend / Logic
+- 🧠 AI-powered website generation from text prompts
+- 📄 Multi-page website support (Home, About, Contact, etc.)
+- 🎨 Multiple design themes
+- 📱 Fully responsive layouts
+- ⚡ Live preview generation
+- 📦 Download generated website as ZIP
+- 🏗️ Automatic project folder structure generation
 
-• Python CLI (Argparse)
-• Prompt Engineering
+---
 
-Web Technologies
+## 🛠️ Tech Stack
 
-• HTML5
-• CSS3
+- Python
+- Groq API
+- Llama 3
+- HTML5
+- CSS3
+- JavaScript
 
-Environment & Tools
+---
 
-• Python Dotenv – for API key management
-• Regex – for parsing AI generated files
-• Zipfile Module – for exporting websites
-• Webbrowser Module – for preview functionality
+## 📂 Project Structure
+
+```
+AI-website-generator/
+│── app.py
+│── templates/
+│── static/
+│── generated_websites/
+│── requirements.txt
+│── README.md
+```
+
+---
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/tanushkhare/AI-website-generator.git
+
+cd AI-website-generator
+
+pip install -r requirements.txt
+
+python app.py
+```
+
+
+
+## 📌 Future Improvements
+
+- React-based frontend generation
+- Additional AI model support
+- One-click deployment
+- Custom domain integration
+- Enhanced UI customization
+
+## 👨‍💻 Author
+
+**Tanush Vishal Khare**
+
+- GitHub: https://github.com/tanushkhare
+- LinkedIn: https://www.linkedin.com/in/tanush-khare-849167319
+
