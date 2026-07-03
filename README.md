@@ -1,124 +1,105 @@
 # 🚀 AI Website Generator
 
-Generate complete, production-ready multi-page websites from a single description using **Groq + LLaMA**.
+An AI-powered CLI application that transforms natural language prompts into responsive, production-ready multi-page websites using the Groq API and Llama 3.1.
 
-![Demo](projects/fintech-demo/screenshot-preview.png)
+---
+
+## 📸 Demo
+
+### Terminal Execution
+
+![Terminal](assets/terminal%20generated.png)
+
+### Generated Website
+
+![Homepage](assets/homepage.png)
+
+### Generated Project Structure
+
+![Output Folder](assets/output%20folder.png)
 
 ---
 
 ## ✨ Features
 
-- **One-command generation** — describe your site, get full HTML/CSS in seconds
-- **3 visual themes** — `dark`, `luxury`, `minimal`
-- **Multi-page output** — index, about, contact + shared CSS
-- **Responsive by default** — mobile-first with proper breakpoints
-- **Auto ZIP export** — ready to deploy immediately
-- **Browser preview** — `--preview` flag opens the site instantly
-- **Powered by Groq** — blazing fast inference with LLaMA 3.3 70B
+- 🧠 AI-powered website generation from text prompts
+- 📄 Multi-page website support
+- 🎨 Multiple design themes (Dark, Luxury, Minimal)
+- 📱 Fully responsive layouts
+- 🌐 Automatic browser preview
+- 📦 ZIP export of generated websites
+- ⚙️ Command-line interface with multiple options
 
 ---
 
-## 📁 Project Structure
+## 🛠️ Tech Stack
 
-```
-ai-website-generator/
-├── agent.py                  # Main generator script
-├── requirements.txt          # Python dependencies
-├── .env.example              # API key template
-├── .gitignore
-├── README.md
-│
-└── projects/                 # All generated sites live here
-    └── fintech-demo/         # Example: Modern Fintech Dashboard
-        ├── index.html
-        ├── about.html
-        ├── contact.html
-        ├── style.css
-        └── website.zip
+- Python
+- Groq API
+- Llama 3.1
+- HTML5
+- CSS3
+- JavaScript
+
+---
+
+## 📂 Project Structure
+
+```text
+AI-Website-Generator/
+│── agent.py
+│── requirements.txt
+│── README.md
+│── .env.example
+│── .gitignore
+│── assets/
 ```
 
 ---
 
-## ⚡ Quick Start
-
-### 1. Clone the repo
+## 🚀 Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-website-generator.git
-cd ai-website-generator
-```
+git clone https://github.com/tanushkhare/AI-website-generator-.git
 
-### 2. Install dependencies
+cd AI-Website-Generator
 
-```bash
 pip install -r requirements.txt
+
+python agent.py
 ```
 
-### 3. Add your Groq API key
+---
+
+## 💻 Example Usage
 
 ```bash
-cp .env.example .env
-# Edit .env and paste your key from https://console.groq.com
+python agent.py --preview
 ```
 
-### 4. Generate a website
+Example Prompt:
 
-```bash
-python agent.py --desc "SaaS landing page for a project management tool" --theme dark --preview
 ```
-
----
-
-## 🎛️ CLI Options
-
-| Flag | Values | Default | Description |
-|------|--------|---------|-------------|
-| `--desc` | any string | *(prompted)* | Website description |
-| `--mode` | `single` `multi` | `multi` | Single page or multi-page |
-| `--theme` | `dark` `luxury` `minimal` | `dark` | Visual theme |
-| `--preview` | flag | off | Open in browser after generation |
-| `--model` | any Groq model | `llama-3.3-70b-versatile` | Override the model |
-
-### Examples
-
-```bash
-# Minimal single-page portfolio
-python agent.py --desc "Personal portfolio for a UX designer" --mode single --theme minimal
-
-# Luxury e-commerce landing page
-python agent.py --desc "High-end watch brand e-commerce site" --theme luxury --preview
-
-# Dark SaaS dashboard
-python agent.py --desc "Analytics dashboard for a social media tool" --theme dark
+Create a modern healthcare AI website with Home, About and Contact pages.
 ```
 
 ---
 
-## 🗂️ Demo Output
+## 📌 Future Improvements
 
-The `projects/fintech-demo/` folder contains a live example generated for:
-
-> *"Modern fintech dashboard for payment processing and analytics"*
-
-**Pages:** Home · About · Contact  
-**Theme:** Dark  
-**Features:** animated hero, floating stat cards, feature grid, testimonial, contact form
+- Streamlit web interface
+- Additional AI model support
+- One-click deployment
+- Custom themes
+- React frontend generation
 
 ---
 
-## 🔧 Requirements
+## 👨‍💻 Author
 
-- Python 3.9+
-- [Groq API key](https://console.groq.com) (free tier available)
+**Tanush Vishal Khare**
 
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! Please open an issue first to discuss what you'd like to change.
+- GitHub: https://github.com/tanushkhare
+- LinkedIn: https://www.linkedin.com/in/tanush-khare-849167319
 
 ---
-
-## 📄 License
-
-MIT — free to use, fork, and build upon.
